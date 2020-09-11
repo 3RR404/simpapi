@@ -1,9 +1,9 @@
 {
-    "name": "oknajlehcim/api",
+    "name": "simpapi/api",
     "authors": [
         {
-            "name": "Ján Michel",
-            "email": "jan.michel@4memedia.sk"
+            "name": "err404",
+            "email": "oknajlehcim@gmail.com"
         }
     ],
     "require": {
