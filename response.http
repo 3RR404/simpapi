@@ -1,0 +1,58 @@
+# Requests
+
+## User distributions [/users]
+
+### All Users [GET]
+GET http://localhost/simpapi/user HTTP/1.1
+
+### One User [GET]
+GET http://localhost/simpapi/user/2 HTTP/1.1
+
+### Update user data [PUT]
+PUT http://localhost/simpapi/user/1 HTTP/1.1
+content-Type: application/json
+
+{
+    "first_name" : "John",
+    "last_name" : "Doe",
+    "e_mail" : "john@example.com"
+}
+
+### Create user [POST]
+POST http://localhost/simpapi/user HTTP/1.1
+content-Type: application/json
+
+{
+    "first_name" : "Joe",
+    "last_name" : "Doe",
+    "e_mail" : "joe.limo@example.com"
+}
+
+### All Posts [GET]
+GET http://localhost/simpapi/post HTTP/1.1
+
+### One Post [GET]
+GET http://localhost/simpapi/post/4 HTTP/1.1
+
+
+### Update post data [PUT]
+PUT http://localhost/simpapi/post/4 HTTP/1.1
+content-Type: application/json
+
+{
+    "title" : "Lorem I. Sit",
+    "slug" : "",
+    "content" : "Officia eu fugiat pariatur laborum nostrud id. Ea enim voluptate amet laborum mollit sunt pariatur adipisicing in mollit pariatur. Sunt dolore sint elit nostrud non ex aliquip non do magna nulla. Irure ut commodo ipsum labore ea. Ad adipisicing non adipisicing sit non nulla exercitation ex amet reprehenderit irure voluptate. Dolore eiusmod eu pariatur tempor ex ullamco sunt culpa ea dolor aute esse ullamco ad. Ut officia irure eu magna dolore id. Proident nulla veniam consectetur duis. Et culpa quis in qui ut amet dolor amet laborum ea anim incididunt. Nulla nulla dolore anim nisi aute tempor cupidatat. Aliqua eu voluptate ut minim velit et proident commodo irure ex. Amet ut nostrud est irure et occaecat sint reprehenderit fugiat voluptate quis ut proident enim. Ad labore cillum mollit et Lorem proident enim sit commodo. Anim esse ipsum ex consectetur labore quis tempor exercitation in. Ex dolore ad elit magna culpa aute nisi ex elit. Ipsum voluptate adipisicing deserunt do dolore ut. Ut est consectetur magna eu consectetur aute id officia tempor laboris ea fugiat non elit. Eu qui id cupidatat sit mollit voluptate velit consectetur deserunt ex aute laboris laborum commodo.",
+    "user_id" : 1
+}
+
+### Create new post [POST]
+POST http://localhost/simpapi/post/ HTTP/1.1
+content-Type: application/json
+
+{
+    "title" : "Lorem Ipsum ipsum sit amet dolor",
+    "slug" : "",
+    "content" : "Officia eu fugiat aliquip pariatur laborum nostrud id. Ea enim voluptate amet laborum mollit sunt pariatur adipisicing in mollit pariatur. Sunt dolore sint elit nostrud non ex aliquip non do magna nulla. Irure ut commodo ipsum labore ea. Ad adipisicing non adipisicing sit non nulla exercitation ex amet reprehenderit irure voluptate. Dolore eiusmod eu pariatur tempor ex ullamco sunt culpa ea dolor aute esse ullamco ad. Ut officia irure eu magna dolore id. Proident nulla veniam consectetur duis. Et culpa quis in qui ut amet dolor amet laborum ea anim incididunt. Nulla nulla dolore anim nisi aute tempor cupidatat. Aliqua eu voluptate ut minim velit et proident commodo irure ex. Amet ut nostrud est irure et occaecat sint reprehenderit fugiat voluptate quis ut proident enim. Ad labore cillum mollit et Lorem proident enim sit commodo. Anim esse ipsum ex consectetur labore quis tempor exercitation in. Ex dolore ad elit magna culpa aute nisi ex elit. Ipsum voluptate adipisicing deserunt do dolore ut. Ut est consectetur magna eu consectetur aute id officia tempor laboris ea fugiat non elit. Eu qui id cupidatat sit mollit voluptate velit consectetur deserunt ex aute laboris laborum commodo.",
+    "user_id" : 2
+}
